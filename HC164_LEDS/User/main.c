@@ -236,3 +236,4 @@ void Demo_Different_Patterns(void)
 
     blink_state = !blink_state;  // Toggle for next time
 }
+// Git integration test -Thu Aug 28 15:27:58 IST 2025
