@@ -1,0 +1,31 @@
+*/obj/
+*/bin/
+*/Debug/
+*/Release/
+*/*.o
+*/*.elf
+*/*.hex
+*/*.bin
+*/*.map
+*/*.list
+*/*.lss
+*/*.sym
+.metadata/
+*/.metadata/
+*/*.wvproj.bak
+*/*.wvproj.local
+*/.settings/
+#VS code wroksapce files that are personal
+vscode/settings.json
+.vscode/launch.json
+#OS files
+Thumb.db
+.DS_store
+*~
+*.bak
+*.orig
+*.log
+
+#Temporary files
+*.tmp
+*temp
