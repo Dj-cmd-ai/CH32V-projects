@@ -18,7 +18,7 @@ uint32_t current_mA = 0;
 
 //=====================GPIO designations and variables for AC Voltage sensing=======================
 #define ANALOG3_PIN GPIO_Pin_3
-#define VOLTAGE_THRESHOLD_COUNT_ 10 // Number of consecutive over-voltage readings
+#define VOLTAGE_THRESHOLD_COUNT_ 100 // Number of consecutive over-voltage readings
 uint8_t voltageflag = 0;
 uint16_t adcReading3 = 0;
 uint32_t DCvoltageadc = 0;
@@ -65,7 +65,7 @@ uint32_t currentthreshold = 0;
 uint8_t overcurrentCount = 0;  // Counter for consecutive overcurrent readings
 
 /*Variable which decides the over and under voltage limit*/
-uint32_t overvoltagethreshold = 270;
+uint32_t overvoltagethreshold = 310;
 uint32_t undervoltagethreshold = 120;
 
 /*Variable to count voltage crossing condition triggering*/
@@ -149,7 +149,7 @@ volatile uint32_t target_scaled_value = 0;      // Store the target pot-based sc
 
 // ===================== ZERO DETECTION FILTERING CONFIGURATION =====================
 #define ZERO_FILTER_ENABLED 1               // Enable/disable zero detection filtering
-#define ZERO_FILTER_COUNT_THRESHOLD 25        // Number of consecutive zero readings required(1000 for 3 speed)
+#define ZERO_FILTER_COUNT_THRESHOLD 1000        // Number of consecutive zero readings required(1000 for 3 speed)
 #define ZERO_FILTER_NONZERO_THRESHOLD 5     // Number of consecutive non-zero readings required
 #define ZERO_DETECTION_THRESHOLD 25         // ADC value considered as "zero"
 
